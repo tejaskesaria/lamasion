@@ -420,6 +420,8 @@ img.leave-obj-3{top:560px;width:76px}
 .leave-obj-4{top:-50px!important}
 .disclaimer-popup{position:fixed;bottom:0;background-color:#fff;color:#000;border-radius:0;padding:20px;text-align:center;z-index:99999;display:none;left:0;height:100%;width:100%}
 .homePlanWrapper{margin-top: 1.5rem;}
+.banner-img{height: auto;}
+img.sidelogo{width: 20%;margin: 0}
 }
 @media only screen and (max-width:498px){
 .title-headding{font-size:5rem;letter-spacing:-5px}
