@@ -373,7 +373,9 @@ section {
   }
 
   .sectionfh img{width: 100%;height: auto;padding-right: 0%;}
-
+  .sectionfh.banner img,.swiper-slide img{min-height: auto !important;}
+  .sectionfh.banner{padding-top: 40px;}
+  header{padding: 5px 0;}
   .homePlanWrapper {
    width: 100%;
     padding: 0 20px;
