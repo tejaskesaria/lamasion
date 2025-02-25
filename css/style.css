@@ -514,7 +514,7 @@ header .col-1{width: 70%;}
   .burger{display: block;scale: .7;float: right;}
   .mobile-menu{width: 30%;}
   
-  .nav-links{    position: fixed;
+  .nav-links{    position: absolute;
     background: #e5e5e5;
     /* padding: 10px 0; */
     width: 100%;
