@@ -13,31 +13,13 @@ $(document).ready(function () {
     );
   });
  
-  $(".menu-btn").click(function () {
-    $(".menu-btn").toggleClass("change");
-    $(".nav-links").slideToggle();
-  });
+  // $(".menu-btn").click(function () {
+  //   $(".menu-btn").toggleClass("change");
+  //   // $(".nav-links").slideToggle();
+  // });
 
 
-  if (window_wt <= 992) {
-    $(".nav-links").click(function () {
-      $(".nav-links").slideToggle();
-      $(".menu-btn").toggleClass("change");
-    });
-
-    $(".has-submenu").click(function () {
-      $(".my_menu").slideToggle();
-    });
-  } else {
-    $(".has-submenu").hover(
-      function () {
-        $(".my_menu").show();
-      },
-      function () {
-        $(".my_menu").hide();
-      }
-    );
-  }
+  
 
   $(".enq_click, .virtual-tour-btn").on("click", function () {
     $("#overlay").fadeIn();
@@ -52,9 +34,9 @@ $(document).ready(function () {
   
 });
 $(window).scroll(function () {
-  if (window_wt <= 992) {
-    $(".nav-links").fadeOut(500);
-  }
+  // if (window_wt <= 992) {
+  //   $(".nav-links").fadeOut(500);
+  // }
   $(".lazy").each(function () {
     if ($(this).attr("data-src")) {
       this.tagName == "IMG" || this.tagName == "IFRAME"
@@ -131,7 +113,16 @@ var mySwiper = new Swiper ('.mySwiperVertical', {
       disableOnInteraction: true,
   },
 });
+const burger = document.getElementById("burger");
+const navLinks = document.querySelector(".nav-links");
 
+burger.addEventListener("change", function() {
+    if (this.checked) {
+        navLinks.style.height = "250px"; // Expands to full height
+    } else {
+        navLinks.style.height = "0";
+    }
+});
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
   
