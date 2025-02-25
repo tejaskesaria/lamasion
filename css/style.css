@@ -398,6 +398,8 @@ section {
 }
   
 @media only screen and (max-width:767px){
+  html { /* body won't work ¯\_(ツ)_/¯ */
+    scroll-snap-type: none;}
 .tablet-hide{display:none}
 .header-call-me{display:none}
 /* .tablet-image{width:50%} */
