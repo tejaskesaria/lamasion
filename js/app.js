@@ -122,9 +122,12 @@ burger.addEventListener("change", function() {
     } else {
         navLinks.style.height = "0";
     }
-});
+});const clickEvent = new MouseEvent("click", { bubbles: true }); // Create a click event
 document.querySelectorAll(".nav-links a").forEach(link => link.addEventListener('click', function(){
   navLinks.style.height = "0";
+  
+
+  burger.dispatchEvent(clickEvent);
 }));
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
