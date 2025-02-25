@@ -123,6 +123,9 @@ burger.addEventListener("change", function() {
         navLinks.style.height = "0";
     }
 });
+document.querySelectorAll(".nav-links a").forEach(link => link.addEventListener('click', function(){
+  navLinks.style.height = "0";
+}));
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
   
