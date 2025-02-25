@@ -6,14 +6,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>LA MAISON</title>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>LA MAISON</title>
+  
 
  </head>
 
@@ -27,8 +27,8 @@
      </a>
      <div class="col-10">
       <div class="pull-right header-call-me">
-       <a href="tel:+91777777777"><img src="images/phone-alt.svg" width="18">+91 777777777</a>
-       <a href="javascript:;" class="mg-lt-10 enq_click header-enquire-btn theme-btn">ENQUIRE NOW</a>
+       <a href="tel:+919219891011"><img src="images/phone-alt.svg" width="18">+919219891011</a>
+       <a href="#enquire-fomr" class="mg-lt-10 header-enquire-btn theme-btn">ENQUIRE NOW</a>
       </div>
      </div>
     </div>
@@ -46,11 +46,21 @@
     });
    });
   </script>
-  <section id="home" class="relative">
-   <img src="images/banner1.jpg" alt="Banner 1" class="banner-img">
-   <img src="images/banner2.jpg" alt="Banner2" class="banner-img">
+  <section class="sectionfh banner">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/banner1.jpg" alt="Banner 1" class="banner-img"></div>
+        <div class="swiper-slide"><img src="images/banner2.jpg" alt="Banner 1" class="banner-img"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
   </section>
-  <section class="sectionfh section1 pos-rel">
+  <!-- <section id="home" class="relative">
+   
+   <img src="images/banner2.jpg" alt="Banner2" class="banner-img">
+  </section> -->
+  <section class="sectionfh section1 pos-rel sc">
     <img src="images/leaves1.png" alt="Leaves" class="bgimg">
     <div class="container">
       <div class="flex">
@@ -58,19 +68,18 @@
         <div class="homePlanWrapper">
           <h2 class="heading-font orange-text"> Meet La Maison </h2>
            <div>
-            <p class="secdesc"> <em>
+            <p class="description-text">
               An exquisite gated community in the heart of Karjat, <b>La Maison</b> is a luxurious enclave of private farmhouse plots, ranging from half an acre to one acre and above. Inspired by the serene and elegant French countryside estates, this is where time slows down and every moment is savoured, creating a haven of tranquillity and grandeur.
-             </em> </p>
-            <p class="secdesc">
-             <em> “Maison,” meaning “home” in French, reflects the essence of comfort and belonging. Grand arches, pristine white façades, and seamless indoor-outdoor spaces create a sanctuary of serenity. Maison Living is a perfect blend of sophistication and tranquility, where beauty, nature, and elegance exist in perfect harmony.
-              </em>
+             </p>
+            <p class="description-text">
+             “Maison,” meaning “home” in French, reflects the essence of comfort and belonging. Grand arches, pristine white façades, and seamless indoor-outdoor spaces create a sanctuary of serenity. Maison Living is a perfect blend of sophistication and tranquility, where beauty, nature, and elegance exist in perfect harmony.
             </p>
            </div>
          </div>
       </div>
     </div>
   </section>
-  <section class="sectionfh pos-rel section2">
+  <section class="sectionfh pos-rel section2 sc">
     <img src="images/bird-top.png" alt="Leaves" class="bgimg">
     <div class="container">
       <div class="flex">
@@ -78,49 +87,63 @@
           <h2 class="sec-title mg-tp-20" style="line-height: 0.8; color: rgb(53 79 54); font-size: 3rem">
            <span class="title-headding disp-block mg-bt-30 title-headding">La Maison</span> Gated Community
           </h2>
-          <p class="sec-heading mg-tp-20"> <em> Our luxurious homes embrace the rustic elegance of traditional farmhouses, balanced by the grandiose of high-end design and swanky elements. Each home is thoughtfully designed with stone facades, steep roofs, dormer windows, and charming wrought-iron balconies. You'll find spacious interiors with high ceilings, large windows, and luxurious finishes that blend modern comfort with classic charm. The experience blends French aesthetics with Indian pragmatic standards, all bookmarked by supreme luxury.
-         </em> </p>
+          <p class="description-text mg-tp-30"> Our luxurious homes embrace the rustic elegance of traditional farmhouses, balanced by the grandiose of high-end design and swanky elements. Each home is thoughtfully designed with stone facades, steep roofs, dormer windows, and charming wrought-iron balconies. You'll find spacious interiors with high ceilings, large windows, and luxurious finishes that blend modern comfort with classic charm. The experience blends French aesthetics with Indian pragmatic standards, all bookmarked by supreme luxury.
+         </p>
          </div>
          <div class="text-center"><img src="images/section4-image.jpg" alt="section3 Image" class="img-responsive"></div>
       </div>
     </div>
   </section>
-  <section class="sectionfh section1 pos-rel">
+  <section class="sectionfh section1 pos-rel sc">
     <img src="images/leaves1.png" alt="Leaves" class="bgimg">
     <div class="container">
       <div class="flex">
         <div class="text-center"><img src="images/section5-image.jpg" alt="section3 Image" class="img-responsive"></div>
         <div class="homePlanWrapper">
           <h2 class="sec-title" style="color: rgb(244, 130, 50)">La Maison’s<br><span>Leisure Living</span></h2>
-            <p class="sec-heading mg-tp-20" style="font-size: 1.2rem;color:rgb(53 79 54);text-align: justify; "><b><em>Imagine a place where the French countryside's rustic elegance meets India's lush landscapes. Here, we celebrate the French tradition of outdoor picnics with gourmet delights—fresh baguettes, cheeses, and fine wines under the shade of olive trees, surrounded by the sounds of nature. Our picnic areas are designed to offer the perfect setting for these leisurely meals, complete with comfortable seating and stunning views.
-            </em> </b> </p>
+            <p class="description-text mg-tp-30">Imagine a place where the French countryside's rustic elegance meets India's lush landscapes. Here, we celebrate the French tradition of outdoor picnics with gourmet delights—fresh baguettes, cheeses, and fine wines under the shade of olive trees, surrounded by the sounds of nature. Our picnic areas are designed to offer the perfect setting for these leisurely meals, complete with comfortable seating and stunning views.
+            </p>
             <h2>
-              <p style="font-size: 2rem; color: rgb(53 79 54);" class="mg-tp-20"> Bringing the French Outdoor Picnic to Karjat </p>
+              <p class="mg-tp-30 description-text"> Bringing the French Outdoor Picnic to Karjat </p>
             </h2>
          </div>
       </div>
     </div>
   </section>
-  <section class="sectionfh pos-rel section2 sec3">
+  <section class="sectionfh pos-rel section2 sec3 sc">
     <img src="images/Leaves.png" alt="Leaves" class="bgimg">
     <div class="container">
       <div class="flex">
         <div>
           <h2 class="sec-title mg-tp-20" style="color: rgb(244 130 50)"> Why Live at<br><span class="title-headding" style="line-height: 1">La Maison</span> </h2>
-          <p class="sec-heading mg-tp-40" style=" font-size: 1.2rem; color: rgb(53 79 54); text-align: justify;line-height: 1.4; "> <b><em> La Maison is more than just a place to live—it's an experience. Nestled amidst the lush landscapes of Karjat, this gated community brings you the charm of the French countryside with the convenience of modern amenities. Whether you're seeking a serene escape from the city, a luxurious retreat, or a sound investment, La Maison offers it all. Enjoy the perfect blend of privacy, plush living, and community spirit, with thoughtfully designed spaces and world-class facilities that make every day feel like a vacation.</em> </b> </p>
+          <p class="description-text mg-tp-30"> La Maison is more than just a place to live—it's an experience. Nestled amidst the lush landscapes of Karjat, this gated community brings you the charm of the French countryside with the convenience of modern amenities. Whether you're seeking a serene escape from the city, a luxurious retreat, or a sound investment, La Maison offers it all. Enjoy the perfect blend of privacy, plush living, and community spirit, with thoughtfully designed spaces and world-class facilities that make every day feel like a vacation.</p>
           <a href="#amenites" rel="explore-amenities" class="scrol-down theme-btn mg-tp-30 mg-bt-30" data-event-category="Section" data-event-action="Click" data-event-name="EXPLORE AMENITIES">EXPLORE AMENITIES</a> 
         </div>
-         <div class="text-center"><img src="images/section6-image.jpg" alt="section3 Image" class="img-responsive"></div>
+         <div class="text-center">
+          <div class="swiper-container mySwiperVertical" pagination="true" pagination-clickable="true">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/Karjat Villa_ 4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/Karjat Villa_ 5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/Karjat Villa_ 6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/Karjat Villa_ 7.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/Karjat Villa_ 8.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/Karjat Villa_ 9.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/Karjat Villa_ 10.jpg" alt=""></div>
+            </div>
+          
+            <div class="swiper-pagination"></div>
+        </div>
+          
       </div>
     </div>
   </section>
-  <section id="amenites" class="amenities-section">
+  <section id="amenites" class="amenities-section sc">
     <div class="container">
       <h2 class="heading-font text-center brown-text">Project Amenities</h2>
       <div class="grid">
         <div>
           <img src="images/amenities1.jpg" alt="Amenities">
-          <p class="text-center">SECURITY AND INFRASTRUCTURE: <br>
+          <p class="text-center description-text">SECURITY AND INFRASTRUCTURE: <br>
             GATED COMMUNITY WITH
             24/7 SECURITY, INTERNAL
             TAR ROADS, POWER BACKUP,
@@ -129,11 +152,11 @@
         </div>
         <div>
           <img src="images/amenities2.jpg" alt="Amenities2">
-          <p class="text-center">CAFETERIA: <br>A QUAINT FRENCH-STYLE CAFÉ OFFERING GOURMET COFFEE, PASTRIES, AND LIGHT MEALS.</p>
+          <p class="text-center description-text">CAFETERIA: <br>A QUAINT FRENCH-STYLE CAFÉ OFFERING GOURMET COFFEE, PASTRIES, AND LIGHT MEALS.</p>
         </div>
         <div>
           <img src="images/amenities3.jpg" alt="Amenities2">
-          <p class="text-center">CLUBHOUSE: <br>
+          <p class="text-center description-text">CLUBHOUSE: <br>
             A STATE-OF-THE-ART FACILITY WITH
             RECREATIONAL AND FITNESS
             AMENITIES, PERFECT FOR LEISURE AND
@@ -141,7 +164,7 @@
         </div>
         <div>
           <img src="images/amenities4.jpg" alt="Amenities2">
-          <p class="text-center">FULLY-DEVELOPED PLOTS: <br>
+          <p class="text-center description-text">FULLY-DEVELOPED PLOTS: <br>
             READY-TO-BUILD PLOTS
             WITH ALL ESSENTIAL
             INFRASTRUCTURE IN PLACE
@@ -150,7 +173,7 @@
         </div>
         <div>
           <img src="images/amenities5.jpg" alt="Amenities2">
-          <p class="text-center">FORMAL AND LANDSCAPED GARDENS: <br>
+          <p class="text-center description-text">FORMAL AND LANDSCAPED GARDENS: <br>
             SYMMETRICAL GARDENS WITH
             FOUNTAINS AND VARIED GARDENS
             FOR RELAXATION.
@@ -158,20 +181,20 @@
         </div>
         <div>
           <img src="images/amenities6.jpg" alt="Amenities2">
-          <p class="text-center">FARM-TO-TABLE GARDENS: <br>
+          <p class="text-center description-text">FARM-TO-TABLE GARDENS: <br>
             COMMUNITY GARDENS TO GROW YOUR
             OWN PRODUCE.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="sectionfh pos-rel section1">
+  <section class="sectionfh pos-rel section1 sc">
     <img src="images/leave3.png" alt="Leaves" class="bgimg">
     <div class="container">
       <div class="flex">
         <div>
             <h2 class="sec-title"><span class="title-headding" style="line-height: 1">Karjat?</span>— The Hotbed of Investments </h2>
-            <p class="sec-heading mg-tp-20" style="font-size: 1.2rem; color: rgb(53 79 54); text-align: justify"> <b><em> Karjat is emerging as a prime investment and second home (farmhouse) hub, offering lush greenery, rolling hills, and picturesque landscapes. Its strategic location near Mumbai and Pune makes it an ideal retreat for city dwellers seeking peace and relaxation. Karjat's popularity and development offer significant potential for high returns on land investments, making it a lucrative opportunity for buyers looking for long-term gains.</em> </b> </p>
+            <p class="description-text mg-tp-20">Karjat is emerging as a prime investment and second home (farmhouse) hub, offering lush greenery, rolling hills, and picturesque landscapes. Its strategic location near Mumbai and Pune makes it an ideal retreat for city dwellers seeking peace and relaxation. Karjat's popularity and development offer significant potential for high returns on land investments, making it a lucrative opportunity for buyers looking for long-term gains.</p>
          </div>
          <div class="text-center">
           <ul class="location-list">
@@ -222,11 +245,45 @@
     <div class="container">
       <div class="wrap">
         <h2 class="heading-font text-center mg-bt-30">About GreenCity </h2>
-        <p class="sec-heading text-center"> <b><em> Greencity India is not just about crafting weekend homes; it's about creating your personal slice of paradise away from bustling city life. At the heart of their mission is a passion for transforming weekend getaways into an enriching experience that you and your family look forward to. Greencity India believes in more than just building houses, they aim to create communities where life slows down, families bond, and every weekend feels like a little vacation.</em> </b> </p>
+        <p class="description-text text-center"> Greencity India is not just about crafting weekend homes; it's about creating your personal slice of paradise away from bustling city life. At the heart of their mission is a passion for transforming weekend getaways into an enriching experience that you and your family look forward to. Greencity India believes in more than just building houses, they aim to create communities where life slows down, families bond, and every weekend feels like a little vacation.</p>
       </div>
     </div>
   </section>
-
+  <section class="sectionfh" id="enquire-fomr">
+    <div class="container">
+     <div class="flex">
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30175.067239524753!2d73.45243541943172!3d19.024858758804218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd580ccf7b36bd%3A0xe98ef972261105ab!2sDhotre%2C%20Maharashtra%20410201!5e0!3m2!1sen!2sin!4v1740502501665!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div>
+        <h2 class="heading-font text-center mg-bt-30">Get in Touch </h2>
+        <form id="contactform">
+          <div class="modal-body">
+           <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input class="form-control required" type="text" id="name" name="name" required>
+           </div>
+           <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input class="form-control required" type="email" id="email" name="email" required>
+           </div>
+           <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile No</label>
+            <input class="form-control required" maxlength="10" minlength="10" type="number" id="mobile" name="mobile" required>
+           </div>
+           <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" required></textarea>
+           </div>
+          </div>
+          <div class="modal-footer">
+           <button type="submit" class="theme-btn">Submit</button>
+          </div>
+         </form>
+      </div>
+     </div>
+    </div>
+  </section>
   <footer>
    <div id="footerbottom" class="col-12">
     <div class="container">
@@ -239,7 +296,7 @@
     </div>
    </div>
   </footer>
-  <div id="overlay">
+  <!-- <div id="overlay">
    <div id="popup">
     <div class="brochure-form-wrapper">
      <div class="modal-header">
@@ -271,80 +328,24 @@
      </form>
     </div>
    </div>
-  </div>
+  </div> -->
   <div class="footer-link">
-   <a href="tel:+91777777777" class="footer-call-me" data-event-category="Footer" data-event-action="Click" data-event-name="Call me"><img src="images/phone-alt.svg" width="18">+91 777777777</a>
-   <a href="javascript:;" class="enquire-btn enq_click" data-event-category="Footer" data-event-action="Click" data-event-name="ENQUIRE NOW">ENQUIRE NOW</a>
+   <a href="tel:+919219891011" class="footer-call-me" data-event-category="Footer" data-event-action="Click" data-event-name="Call me"><img src="images/phone-alt.svg" width="18">+919219891011</a>
+   <a href="#enquire-fomr" class="enquire-btn" data-event-category="Footer" data-event-action="Click" data-event-name="ENQUIRE NOW">ENQUIRE NOW</a>
   </div>
 
   
  </body>
- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <script src="js/jquery.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/customOnePageScroll.js"></script>
-  <!-- <script src="js/jquery.colorbox-min.js"></script> -->
  <script src="js/app.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
 
  <script>
-  // AOS.init();
-  const swiper = new Swiper('.swiper', {
-   speed: 4000,
-   spaceBetween: 0,
-   loop: true,
-   slidesPerView: 1,
-   autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-   },
-  });
-  var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'vertical',
-    effect: "fade",
-    slidesPerView: 1,
-    direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: true,
-    },
-});
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    var formData = {
-      name: document.getElementById("name").value,
-      mobile: document.getElementById("mobile").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycbzBPFd1s-MclrCTRGdabOXI_dQKJkKt4fZXBg9WBdJyImsWxrR-yF48FGPsEVwmPZVHeQ/exec", {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: { "Content-Type": "application/json" }
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.status === "success") {
-        window.location.href = "thankyou.html"; // Redirect on success
-      } else {
-        alert("Error submitting form.");
-      }
-    })
-    .catch(error => console.error("Error:", error));
-  });
-
+  
  </script>
 
 </html>

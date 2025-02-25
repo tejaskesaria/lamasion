@@ -19,13 +19,6 @@ $(document).ready(function () {
   });
 
 
-  // $(window).on("scroll", function () {
-  //   if ($(window).scrollTop() > 50) {
-  //     $("header").addClass("sticky-header");
-  //   } else {
-  //     $("header").removeClass("sticky-header");
-  //   }
-  // });
   if (window_wt <= 992) {
     $(".nav-links").click(function () {
       $(".nav-links").slideToggle();
@@ -71,48 +64,7 @@ $(window).scroll(function () {
     }
   });
 });
-// $(window).scroll(function (e) {
-//   if (window_wt >= 992) {
-//     e.preventDefault();
-//     var wScroll = $(window).scrollTop();
 
-//     var offset1 = (wScroll - $(".scrolled1").offset().top) * 0.02;
-//     // var offset2 = (wScroll - $(".scrolled2").offset().top) * 0.1;
-//     var offset3 = (wScroll - $(".scrolled3").offset().top) * 0.02;
-//     var offset4 = (wScroll - $(".scrolled4").offset().top) * 0.02;
-//     $(".scrolled1").css({ transform: "translateY(" + offset1 + "px)" });
-//     // $(".scrolled2").css({ 'transform': 'translateY(' + offset2 + 'px)' });
-//     $(".scrolled3").css({ transform: "translateY(" + offset3 + "px)" });
-//     $(".scrolled4").css({ transform: "translateY(" + offset4 + "px)" });
-//   }
-// });
-
-// $("#lonavalaFinest").validate({
-//   rules: {},
-//   messages: {},
-//   submitHandler: function (form) {
-//     $("#submit_form").attr("disabled", "disabled").val("Please wait...");
-//     $("#lonavalaFinest").hide();
-//     $(".thankyou").html(
-//       "Thank You For Your Inquiry, Our Sales Representative Will Get Back To You."
-//     );
-//     $.ajax({
-//       type: "POST",
-//       url: "save.php",
-//       data: $("#lonavalaFinest").serialize(),
-//       success: function (response) {
-//         if (virtualBtn == 1) {
-//           window.open("https://prop.vu/lonavalalife?omega=vector");
-//         }
-//         $(".virtual-tour-btn").attr(
-//           "href",
-//           "https://prop.vu/lonavalalife?omega=vector"
-//         );
-//         $(".virtual-tour-btn").attr("target", "_blank");
-//       },
-//     });
-//   },
-// });
 
 if (sessionStorage) {
   if (sessionStorage.getItem("popup") === null) {
@@ -137,3 +89,73 @@ if (sessionStorage) {
   console.log("Your browser does not support web storage");
 }
 
+document.addEventListener("DOMContentLoaded", (event) => {
+  var swiper = new Swiper(".mySwiper", {
+    speed: 1000,
+    effect: "fade",
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+        loop: true,
+        autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+  },
+  });
+// AOS.init();
+//   const swiper = new Swiper('.swiper', {
+//    speed: 4000,
+//    spaceBetween: 0,
+//    loop: true,
+//    slidesPerView: 1,
+//    autoplay: {
+//     delay: 1000,
+//     disableOnInteraction: false,
+//    },
+//   });
+var mySwiper = new Swiper ('.mySwiperVertical', {
+  direction: 'vertical',
+  speed: 1000,
+  effect: "fade",
+  slidesPerView: 1,
+  direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  loop: true,
+  autoplay: {
+      delay: 2000,
+      disableOnInteraction: true,
+  },
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    var formData = {
+      name: document.getElementById("name").value,
+      mobile: document.getElementById("mobile").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbzBPFd1s-MclrCTRGdabOXI_dQKJkKt4fZXBg9WBdJyImsWxrR-yF48FGPsEVwmPZVHeQ/exec", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json" }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === "success") {
+        window.location.href = "thankyou.html"; // Redirect on success
+      } else {
+        alert("Error submitting form.");
+      }
+    })
+    .catch(error => console.error("Error:", error));
+  });
+
+});
