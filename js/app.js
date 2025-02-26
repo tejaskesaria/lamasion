@@ -108,10 +108,10 @@ var mySwiper = new Swiper ('.mySwiperVertical', {
       clickable: true,
     },
   loop: true,
-  autoplay: {
-      delay: 2000,
-      disableOnInteraction: true,
-  },
+  // autoplay: {
+  //     delay: 2000,
+  //     disableOnInteraction: true,
+  // },
 });
 const burger = document.getElementById("burger");
 const navLinks = document.querySelector(".nav-links");

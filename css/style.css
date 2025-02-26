@@ -364,21 +364,25 @@ section {
 }
 .sectionfh .mySwiperVertical img{}
 .sectionfh.banner{padding: 0;}
+.swiper-button-next, .swiper-button-prev{color: #fff;}
 @media (max-width: 768px) {
   .sectionfh {
-    min-height: auto; /* Auto height for content */
+    min-height: auto; 
   }
+  .swiper-button-next, .swiper-button-prev{color: transparent;}
+  .grid{margin-top: 10px;}
   html { /* body won't work ¯\_(ツ)_/¯ */
     scroll-snap-type: none;}
   .flex {
     flex-direction: column;
     text-align: center;
   }
-
+  .swiper-container{height: 200px;position: relative;}
   .sectionfh img{width: 100%;height: auto;padding-right: 0%;}
   .sectionfh.banner img,.swiper-slide img{min-height: auto !important;}
   .sectionfh.banner{padding-top: 40px;}
   header{padding: 5px 0;}
+  iframe{width: 100%;height: 250px;}
   .homePlanWrapper {
    width: 100%;
     padding: 0 20px;
@@ -436,13 +440,13 @@ div#popup{width:100%;height:100%;top:0;margin:0}
 .aboutus2{background-image:url(../images/banner-home-2.jpg)!important}
 .villa-right{padding:0}
 .virtual-tour-btn{margin:30px 10px 0}
-ul.location-list{margin-left:0}
+ul.location-list{margin:0;gap:20px}
 img.leave-obj-1{width:140px}
 img.leave-obj-2{width:100px}
 img.leave-obj-3{top:560px;width:76px}
 .leave-obj-4{top:-50px!important}
 .disclaimer-popup{position:fixed;bottom:0;background-color:#fff;color:#000;border-radius:0;padding:20px;text-align:center;z-index:99999;display:none;left:0;height:100%;width:100%}
-.homePlanWrapper{margin-top: 1.5rem;}
+.flex{gap: 20px;}
 .banner-img{height: auto;}
 img.sidelogo{width: 20%;margin: 0}
 header .col-1{width: 70%;}
