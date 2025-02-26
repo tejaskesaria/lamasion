@@ -267,8 +267,11 @@ section{background-attachment: fixed;}
 .description-text{font-size: 1.2rem; color: rgb(53 79 54);}
 .swiper-container .swiper-pagination-bullet{width: 15px;height: 15px;background: #fff;opacity: 1;}
 .swiper-container .swiper-pagination-bullet-active{background:rgb(244 130 50);}
+.onlymb{display: none;}
 @media screen and (max-width:768px){
 .contact-form-container .column,.contact-form-container input[type=submit]{width:100%;margin-top:0}
+.banner-img{display: none;}
+.onlymb{display: block;margin-top: 20px;}
 }
 @media only screen and (max-width:992px){
 .col-8{width:100%}
@@ -362,13 +365,13 @@ section {
   object-fit: cover !important;
   padding: 0 !important;
 }
-.sectionfh .mySwiperVertical img{}
 .sectionfh.banner{padding: 0;}
 .swiper-button-next, .swiper-button-prev{color: #fff;}
 @media (max-width: 768px) {
   .sectionfh {
     min-height: auto; 
   }
+  
   .swiper-button-next, .swiper-button-prev{color: transparent;}
   .grid{margin-top: 10px;}
   html { /* body won't work ¯\_(ツ)_/¯ */
@@ -378,6 +381,10 @@ section {
     text-align: center;
   }
   .swiper-container{height: 200px;position: relative;}
+  .vertical .swiper-wrapper{height: 230px !important;}
+  section#amenites {
+    margin-top: 60px;
+}
   .sectionfh img{width: 100%;height: auto;padding-right: 0%;}
   .sectionfh.banner img,.swiper-slide img{min-height: auto !important;}
   .sectionfh.banner{padding-top: 40px;}
