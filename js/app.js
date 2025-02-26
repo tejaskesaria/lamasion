@@ -81,10 +81,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       prevEl: ".swiper-button-prev",
     },
         loop: true,
-  //       autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: true,
-  // },
+        autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+  },
   });
   var swiper = new Swiper(".mySwiper2", {
     speed: 1000,
@@ -95,10 +95,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       prevEl: ".swiper-button-prev",
     },
         loop: true,
-  //       autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: true,
-  // },
+        autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+  },
   });
 // AOS.init();
 //   const swiper = new Swiper('.swiper', {
