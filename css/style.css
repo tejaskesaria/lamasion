@@ -367,6 +367,21 @@ section {
 }
 .sectionfh.banner{padding: 0;}
 .swiper-button-next, .swiper-button-prev{color: #fff;}
+.contactdetails{list-style: none;}
+.contactdetails svg{width: 18px; height: 18px;margin-right: 5px;}
+.contactdetails li{margin-bottom: 10px;}
+.contactdetails a{text-decoration: none;color: #354f36;position: relative;}
+.contactdetails a:before{
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #354f36;
+  transform:  scaleX(0);}
+.contactdetails a:hover:before{transform:  scaleX(1);}
 @media (max-width: 768px) {
   .sectionfh {
     min-height: auto; 
